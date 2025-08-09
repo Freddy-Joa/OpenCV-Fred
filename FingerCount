@@ -52,7 +52,8 @@ while True:
                     a = math.dist(start, end)
                     b = math.dist(start, far)
                     c = math.dist(end, far)
-                    angle = math.acos((b*2 + c2 - a*2) / (2 * b * c)) * 57
+                    angle = math.acos((b**2 + c**2 - a**2) / (2 * b * c)) * 57
+
 
                     if angle <= 90:
                         count_defects += 1
